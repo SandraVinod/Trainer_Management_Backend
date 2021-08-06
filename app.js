@@ -127,6 +127,18 @@ app.post('/request', (req, res) => {
         }
       }
       else {
+        var item = {
+          fname: req.body.fname,
+          lname: req.body.lname,
+          address: req.body.address,
+          email: req.body.email,
+          phno: req.body.phno,
+          qual: req.body.qual,
+          skill: req.body.skill,
+          comp: req.body.comp,
+          desgn: req.body.desgn,
+          course: req.body.course
+        }
         console.log("error in saving the image")
       }
       var enrollment = new enrollmentdata(item);
