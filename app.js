@@ -126,7 +126,7 @@ app.post('/request', (req, res) => {
           img: req.file.filename
         }
       }
-      else {
+      if(!req.file){
         var item = {
           fname: req.body.fname,
           lname: req.body.lname,
