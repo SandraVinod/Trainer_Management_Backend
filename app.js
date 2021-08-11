@@ -137,7 +137,8 @@ app.post('/request', (req, res) => {
           skill: req.body.skill,
           comp: req.body.comp,
           desgn: req.body.desgn,
-          course: req.body.course
+          course: req.body.course,
+          img:''
         }
         console.log("error in saving the image")
       }
